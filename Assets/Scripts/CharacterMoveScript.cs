@@ -48,6 +48,15 @@ public class CharacterMoveScript : MonoBehaviour
         // Update animation parameter based on character's horizontal speed
         anim.SetFloat("speed", Mathf.Abs(myRb.velocity.x));
 
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            anim.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            anim.transform.localScale = new Vector3(1, 1, 1);
+        }
+       
         // Apply horizontal movement force if not at maximum speed and horizontal input is given
         if (Mathf.Abs(myRb.velocity.magnitude) < maxSpeed && (Mathf.Abs(Input.GetAxis("Horizontal")) > 0))
         {
