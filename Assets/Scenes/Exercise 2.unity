@@ -1396,6 +1396,7 @@ GameObject:
   - component: {fileID: 2096395868}
   - component: {fileID: 2096395867}
   - component: {fileID: 2096395866}
+  - component: {fileID: 2096395869}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1412,8 +1413,8 @@ Transform:
   m_GameObject: {fileID: 2096395864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -271.3, y: -9.6, z: -6.3492517}
-  m_LocalScale: {x: 3.908, y: 3.908, z: 3.908}
+  m_LocalPosition: {x: -267.13, y: -6.8443, z: -6.3492517}
+  m_LocalScale: {x: 8.09894, y: 8.09894, z: 8.09894}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1758406246}
@@ -1435,8 +1436,8 @@ MonoBehaviour:
   maxSpeed: 10
   acceleration: 50
   isGrounded: 0
-  jumpForce: 30
-  secondaryJumpForce: 100
+  jumpForce: 100
+  secondaryJumpForce: 200
   secondaryJumpDelay: 0.4
   secondaryJump: 0
   anim: {fileID: 1758406247}
@@ -1452,10 +1453,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 0.1
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 160
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1502,6 +1503,51 @@ CapsuleCollider2D:
   m_Offset: {x: -0.92511487, y: -0.16990289}
   m_Size: {x: 3.113812, y: 3.9602268}
   m_Direction: 0
+--- !u!61 &2096395869
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096395864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.0168889, y: -2.6160774}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2609172, y: 1.0183017}
+  m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

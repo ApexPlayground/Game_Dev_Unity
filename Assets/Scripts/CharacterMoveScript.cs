@@ -97,5 +97,7 @@ public class CharacterMoveScript : MonoBehaviour
 
         // Reset secondary jump flag to false
         secondaryJump = false;
+
+        yield return null;
     }
 }
