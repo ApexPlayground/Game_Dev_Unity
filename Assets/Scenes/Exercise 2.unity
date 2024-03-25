@@ -1432,15 +1432,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef9ecda0f6b9394cb57cee8e326efca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRb: {fileID: 2096395867}
+  myRb: {fileID: 0}
   maxSpeed: 10
-  acceleration: 50
-  isGrounded: 0
-  jumpForce: 100
-  secondaryJumpForce: 200
+  acceleration: 11
+  isGrounded: 1
+  jumpForce: 9
+  secondaryJumpForce: 12
   secondaryJumpDelay: 0.4
   secondaryJump: 0
-  anim: {fileID: 1758406247}
+  anim: {fileID: 0}
 --- !u!50 &2096395867
 Rigidbody2D:
   serializedVersion: 4
@@ -1453,10 +1453,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.1
-  m_LinearDrag: 10
+  m_Mass: 1
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 160
+  m_GravityScale: 2.55
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
