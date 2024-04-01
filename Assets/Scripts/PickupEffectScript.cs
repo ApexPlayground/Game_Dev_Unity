@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManger : MonoBehaviour
+public class PickupEffectScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,10 @@ public class GameManger : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }
