@@ -38,7 +38,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 0}
+      value: {fileID: 2131361352, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
     - time: 0.28333333
       value: {fileID: 2131361352, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
     attribute: m_Sprite
@@ -77,7 +77,7 @@ AnimationClip:
     - {fileID: 752701133, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
     - {fileID: 1327314619, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
     - {fileID: -1934783995, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
-    - {fileID: 0}
+    - {fileID: 2131361352, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
     - {fileID: 2131361352, guid: 32386143d714a6f439052e9d4837f3d6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2

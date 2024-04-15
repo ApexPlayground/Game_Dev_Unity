@@ -47,7 +47,7 @@ public class CharacterMoveScript : MonoBehaviour
     {
         // Update animation parameter based on character's horizontal speed
         anim.SetFloat("speed", Mathf.Abs(myRb.velocity.x));
-
+        anim.SetFloat("verticalSpeed", Mathf.Abs(myRb.velocity.y));
         if (Input.GetAxis("Horizontal") < 0)
         {
             anim.transform.localScale = new Vector3(-1, 1, 1);
