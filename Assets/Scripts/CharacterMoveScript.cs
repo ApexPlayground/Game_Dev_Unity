@@ -86,6 +86,7 @@ public class CharacterMoveScript : MonoBehaviour
     {
         // Set grounded status to true
         isGrounded = true;
+        anim.SetBool("grounded", true);
     }
     
     // Triggered while character exits a collider
@@ -93,6 +94,7 @@ public class CharacterMoveScript : MonoBehaviour
     {
         // Set grounded status to false
         isGrounded = false;
+        anim.SetBool("grounded", false);
     }
 
     // Coroutine for handling secondary jump
